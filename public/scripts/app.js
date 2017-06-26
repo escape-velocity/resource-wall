@@ -20,17 +20,18 @@ $(() => {
   callData();
 
   function createUrlElement(url){
-    console.log(`${url.url}`);
+
     const html = `
         <div class="col-lg-4">
+        <a href="https://${url.url}">
           <div class="card" style="width: 30rem">
             <img class="card-img-top" src=${url.image} alt="Card image cap">
             <div class="card-block">
-
+              </a>
               <h4 class="card-title">${url.title}</h4>
               <p class="card-text">${url.url}</p>
               <p class="card-text">${url.description}</p>
-              <p class="card-text">Category:${url.category}</p>
+
               <div class="footer">
               <fieldset class="rating">
                   <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
@@ -45,12 +46,9 @@ $(() => {
                   <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
                 </fieldset>
               </div>
-              <div id="addcomment"> <a href='#'>add comment</a></div>
-        <div id='postComment'>
-            <textarea name='comment' id='comment'></textarea>
-            <input type='submit' value='Post Comment' />
-        </div>
+
             </div>
+            <p class="category">#${url.category}</p>
           </div>
         </div>`;
 
