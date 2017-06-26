@@ -28,11 +28,11 @@ Allow learners to save learning resources like tutorials, blogs and videos in a 
 
 ## Dependencies
 
-bcrypt ^1.0.2",
-body-parser ^1.15.2",
-dotenv ^2.0.0",
-ejs ^2.4.1",
-express ^4.13.4",
-knex ^0.11.7",
-pg ^6.0.2",
+bcrypt ^1.0.2"
+body-parser ^1.15.2"
+dotenv ^2.0.0"
+ejs ^2.4.1"
+express ^4.13.4"
+knex ^0.11.7"
+pg ^6.0.2"
 rating-gen 0.0.6
