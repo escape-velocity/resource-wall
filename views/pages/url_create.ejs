@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/styles/homepage.css" type="text/css" />
+
+
+    <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+  </head>
+
+
+  <body>
+
+    <div class="container">
+      <br>
+      <br>
+      <form id="target" action="/url_create" method="post">
+      <h2>Enter a URL:</h2>
+        <input id="URL" type="text" name="longURL" placeholder="http://" style="width: 300px">
+
+      <h2>Create Catagory</h2>
+
+        <input id="category" type="text" name="category" placeholder="Category" style="width: 300px">
+
+        <h2>Enter a Title</h2>
+        <input id="title" type="text" name="title" placeholder="title" style="width: 300px">
+
+        <h2>Enter An Image</h2>
+        <input id="image" type="text" name="image" placeholder="image url" style="width: 300px">
+
+        <h2>Enter a Description of Resource</h2>
+        <input id="description" type="text" name="description" placeholder="Description" style="width: 300px"><br/>
+        <input type="submit">
+        </form>
+      </div> <!-- /container -->
+    </body>
+</html>
+

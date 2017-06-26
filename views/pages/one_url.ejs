@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>Tweeter - HomePage</title>
+
+    <!-- External CSS -->
+     <% include ../partials/nav_bar_head %>
+     <% include ../partials/head %>
+  <!-- External CSS -->
+      <link rel="stylesheet" href="styles/one_url.css" type="text/css" />
+      <% include ../partials/nav_bar %>
+  </head>
+
+  <body>
+    <!-- Page-specific (main) content here -->
+    <main class="new-container">
+      <section class="one_url">
+        <img src="http://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg">
+      </section>
+      <section class="new-tweet">
+        <h2>Share a though?</h2>
+        <form id="tweet" action="/tweets" method="POST">
+          <textarea class="text-box" name="text" placeholder="What are you humming about?"></textarea>
+          <input class="tweet" type="submit" value="Share">
+          <span class="counter">140</span>
+        </form>
+      </section>
+      <section id="tweet-id">
+        <article class="tweet-class">
+          <header>
+            <img src="https://www.fillmurray.com/100/100">
+            <h1>Paco Jones</h1>
+          </header>
+          <div class="clearfix">
+            <p>Little tweet here</p>
+          </div>
+            <footer>
+          10 days ago
+          </footer>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
